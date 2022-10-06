@@ -117,9 +117,9 @@ variable "application-lb" {
   type        = map(any)
 }
 
-variable "instance_type" {
-  description = "free tier and paid"
+variable "rds_mysql_subnet_group" {
+  description = "database subnet"
+  default     = null
   type        = string
 }
-
 
